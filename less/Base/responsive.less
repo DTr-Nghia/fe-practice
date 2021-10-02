@@ -1,0 +1,248 @@
+@media screen and (max-width:1170px) {
+    .header {
+        .header-inner {
+            height: 50px;
+            .container {
+                .flex(space-between,center);
+                padding: 0 30px;
+                .logo {
+                    img {
+                        width: 100px;
+                        height: 30px;
+                    }
+                }
+                .navbar {
+                    display: none;
+                }
+                .control-items {
+                    display: none;
+                }
+                .nav-icon {
+                    display: inline-block;
+                }
+            }
+        }
+        .banner {
+            .container {
+                padding: 0 60px;
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .category-product {
+        .container {
+            width: 100%;
+            .category-content {
+                height: 250px;
+                .flex(space-evenly,center);
+                .section {
+                    .represent-img {
+                        display: none;
+                    }
+                    .content {
+                        height: 100%;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .header {
+        .banner {
+            .banner-background {
+                object-fit: cover;
+                height: 100%;
+            }
+            .container {
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .category-product {
+        .container {
+            box-shadow: none;
+            border:none;
+            .category-content {
+                height: 250px;
+                .flex(space-evenly,center);
+                .section {
+                    width: 30%;
+                    border: 1px solid #ccc;
+                    .content {
+                        height: 100%;
+                        .dumbbells-icon {
+                            height: 60px;
+                            width: 70px;
+                        }
+                        .strength-icon {
+                            height: 70px;
+                            width: 50px;
+                        }
+                        .power-icon {
+                            height: 70px;
+                            width: 50px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+        .page-main {
+            .products {
+                .container {
+                    .products-list {
+                        margin-right: 0;
+                        .product-item {
+                            margin: 0 3px 30px 3px; 
+                        }
+                    }
+                }
+            }
+            .brands {
+                .container {
+                    flex-wrap: wrap;
+                    img {
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .header {
+        .header-inner {
+            width: 100%;
+        }
+        .banner {
+            .container {
+                h1 {
+                    font-size: 30px;
+                }
+                h2 {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 8px;
+                    margin-top: 5px;
+                }
+                .shop-button {
+                    margin-top: 0;
+                    padding: 12px 31px;
+                }
+            }
+        }
+        .category-product {
+            transform: none;
+            .container {
+                padding: 0 50px;
+                border: none;
+                width: 100%;
+                .category-content {
+                    height: 500px;
+                    flex-direction: column;
+                    .section {
+                        width: 100%;
+                        border: 1px solid #ccc;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+        .page-main {
+            .products {
+                .container {
+                    .product-filter {
+                        &_title {
+                            font-size: 10px;
+                        }
+                    }
+                    .products-list {
+                        .product-item {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            .footer-bottom {
+                .flex(flex-start,flex-start);
+                flex-direction: column;
+                margin-left: 20px;
+                .contact {
+                    .contact-list {
+                        text-align: center;
+                    }
+                }
+                .account {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .information {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .link {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+        .copyright {
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width:420px){
+    .header {
+        .header-inner {
+            height: 35px;
+        }
+        .banner {
+            .container {
+                h1 {
+                    font-size: 25px;
+                    margin-top: 5px;
+                }
+                h2 {
+                    font-size: 15px;
+                }
+                p {
+                    display: none;
+                }
+                .shop-button {
+                    margin-top: 15px;
+                    padding: 8px 16px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

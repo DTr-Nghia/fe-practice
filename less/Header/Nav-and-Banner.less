@@ -1,0 +1,95 @@
+.header {
+    font-family: "Poppins", sans-serif;
+    .header-inner {
+        position: fixed;
+        right: 0;
+        .flex(center,center);
+        top: 0;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 99;
+        .container {
+            .flex(flex-start,center);
+            padding: 0;
+            .logo {
+                margin-right: 35px;
+            }
+            .navbar {
+                .flex(space-between,center);
+                margin-left: 35px;
+                margin-right: 50px;
+                .nav-item {
+                    margin-left: 24px;
+                    margin-right: 30px;
+                    font-size: 15px;
+                }
+            }
+            .control-items {
+                .flex(space-between,center);
+                color: #fff;
+                margin-left: 26px;
+                width: 150px;
+                .control-item {
+                    height: 18px;
+                    font-size: 16px;
+                    padding-left:28px;
+                    padding-right:28px;
+                    border-right: 1px solid #777;
+                    cursor: pointer;
+                }
+                :last-child {
+                    border-right: none;
+                }
+            }
+            .nav-icon {
+                display: none;
+                color: #fff;
+            }
+        }
+    }
+    .banner {
+        position: relative;
+        .flex(center,center);
+        .banner-background {
+            object-fit: cover;
+            height: 950px;
+            width: 100%;
+            padding:0;
+        }
+        .container {
+            position: absolute;
+            padding: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            h1 {
+                font-size: 60px;
+                margin: 0;
+            }
+            h2 {
+                margin: 0;
+                font-size: 40px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: normal;
+                margin-top: 15px;
+            }
+            .shop-button {
+                background-color: transparent;
+                color: #fff;
+                padding: 18px 46px; 
+                border: 1px solid #fff;
+                text-transform: uppercase;
+                margin-top: 43px;
+                transition: @transition;
+                cursor: pointer;
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

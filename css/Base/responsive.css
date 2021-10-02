@@ -1,0 +1,65 @@
+@media screen and (max-width: 1170px) {
+  .header .header-inner {
+    height: 50px;
+  }
+  .header .header-inner .container .flex(space-between,center) .logo img {
+    width: 100px;
+    height: 30px;
+  }
+  .header .header-inner .container .navbar {
+    display: none;
+  }
+  .header .header-inner .container .control-items {
+    display: none;
+  }
+  .header .header-inner .container .nav-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header .banner .container h1 {
+    font-size: 40px;
+  }
+  .header .banner .container h2 {
+    font-size: 20px;
+  }
+  .header .banner .container p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .banner .container h1 {
+    font-size: 30px;
+  }
+  .header .banner .container h2 {
+    font-size: 15px;
+  }
+  .header .banner .container p {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+  .header .banner .container .shop-button {
+    margin-top: 0;
+    padding: 12px 31px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header .header-inner {
+    height: 35px;
+  }
+  .header .banner .container h1 {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .header .banner .container h2 {
+    font-size: 15px;
+  }
+  .header .banner .container p {
+    display: none;
+  }
+  .header .banner .container .shop-button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}
