@@ -411,7 +411,7 @@ ul li {
   padding-left: 30px;
 }
 .main-content .page-main .products .container .products-list .product-item .product-item_content .product-name {
-  line-height: 1.7;
+  line-height: 2;
 }
 .active {
   border-bottom: 1px solid #dd2f31;
@@ -542,7 +542,7 @@ ul li {
   padding-left: 10px;
 }
 .footer .container .footer-bottom .account {
-  margin-left: 19px;
+  margin-left: 23px;
   margin-right: 89px;
   line-height: 1.667;
 }
