@@ -1,10 +1,8 @@
 .main-content {
-    margin-top: 40px;
     .page-main {
         height: 100%;
         .products {
             .container {
-                padding: 0;
                 .product-filter {
                     .flex(flex-start,center);
                     border-bottom: 1px solid #ccc;
@@ -12,7 +10,7 @@
                     &_title {
                         text-transform: uppercase;
                         font-size: 12px;
-                        padding: 0 20px;
+                        padding: 0px 17px;
                         cursor: pointer;
                     }
                 }
@@ -24,7 +22,7 @@
                     margin-right: -30px;
                     .product-item {
                         margin-right: 30px;
-                        margin-bottom: 30px;
+                        margin-bottom: 39px;
                         padding-left: 30px;
                         border: 1px solid transparent;
                         height: 330px;
@@ -46,14 +44,13 @@
                                 }
                             }
                         }
-                        .product-img {
-                            img {
+                        img {
                                 width: 100%;
+                                max-width:270px;
                                 height: 230px;
                                 object-fit: cover;
                                 margin-left: -10px;
                                 margin-bottom: 20px;
-                            }
                         }
                         .product-btn_list {
                             position: absolute;
@@ -74,6 +71,10 @@
                         }
                         .product-name, .product-price {
                             margin: 0;
+                            font-size:14px;
+                        }
+                        .product-name {
+                            line-height: 1.7;
                         }
                     }
                     :first-child {

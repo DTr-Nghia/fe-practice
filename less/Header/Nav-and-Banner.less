@@ -1,6 +1,7 @@
 .header {
     font-family: "Poppins", sans-serif;
-    .header-inner {
+    overflow: hidden;
+    .header-navigation {
         position: fixed;
         right: 0;
         .flex(center,center);
@@ -11,11 +12,10 @@
         z-index: 99;
         .container {
             .flex(flex-start,center);
-            padding: 0;
             .logo {
                 margin-right: 35px;
             }
-            .navbar {
+            .nav-list {
                 .flex(space-between,center);
                 margin-left: 35px;
                 margin-right: 50px;
@@ -42,9 +42,13 @@
                     border-right: none;
                 }
             }
+            .header-hide_navigation {
+                .hide-bar {
+                    display: none;
+                }
+            }
             .nav-icon {
                 display: none;
-                color: #fff;
             }
         }
     }
@@ -55,34 +59,35 @@
             object-fit: cover;
             height: 950px;
             width: 100%;
-            padding:0;
         }
         .container {
             position: absolute;
-            padding: 0;
             top: 50%;
             transform: translateY(-50%);
             color: #fff;
+            margin-top: -10px;
             h1 {
                 font-size: 60px;
+                line-height:1.2;
                 margin: 0;
             }
             h2 {
-                margin: 0;
                 font-size: 40px;
+                margin-bottom: 20px;
+                margin-top: 0;
             }
             p {
                 font-size: 14px;
                 font-weight: normal;
-                margin-top: 15px;
+                line-height:1.68;
+                margin-bottom: 60px;
             }
             .shop-button {
                 background-color: transparent;
                 color: #fff;
-                padding: 18px 46px; 
+                padding: 16px 47px; 
                 border: 1px solid #fff;
                 text-transform: uppercase;
-                margin-top: 43px;
                 transition: @transition;
                 cursor: pointer;
                 &:hover {

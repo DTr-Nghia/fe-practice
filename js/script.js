@@ -20,4 +20,12 @@ $(document).ready(function() {
             $('.reviews').addClass('active')
         },200)
      })
+    $('.nav-icon').click(function(e) {
+        $('.hide-bar').addClass('show-hidebar')
+        $('.overlay').addClass('show-overlay')
+    })
+    $('.overlay').click(function(e) {
+        $('.hide-bar').removeClass('show-hidebar')
+        $('.overlay').removeClass('show-overlay')
+    })
 })

@@ -1,24 +1,60 @@
-@media screen and (max-width:1170px) {
+@media screen and (max-width:1200px) {
     .header {
-        .header-inner {
+        .header-navigation {
             height: 50px;
             .container {
                 .flex(space-between,center);
-                padding: 0 30px;
+                position: relative;
                 .logo {
                     img {
                         width: 100px;
                         height: 30px;
                     }
                 }
-                .navbar {
+                .nav-list {
                     display: none;
                 }
                 .control-items {
                     display: none;
                 }
+                .header-hide_navigation {
+                    .hide-bar {
+                        .flex(space-between,center);
+                        transform: translateX(100%);
+                        flex-direction: column;
+                        position: absolute;
+                        width: 30vw;
+                        height: 100vh;
+                        top: 0;
+                        right: 0;
+                        background-color: #fff;
+                        transition:@transition;
+                        z-index: 999;
+                        .nav-list_hide {
+                            .nav-item_hide {
+                                width: 26vw;
+                                padding: 15px 0;
+                                text-align: center;
+                                border-bottom: 1px solid #ccc;
+                                a {
+                                    color: #333
+                                }
+                            }
+                        }
+                        .control-items_hide {
+                            .flex(space-around,center);
+                            flex-basis: 20%;
+                            .control-item_hide {
+                                padding: 0 20px;
+                            }
+                        }
+                    }
+                }
                 .nav-icon {
-                    display: inline-block;
+                    display: block;
+                    color: #fff;
+                    padding-right: 15px;
+                    cursor: pointer;
                 }
             }
         }
@@ -32,29 +68,29 @@
                     font-size: 20px;
                 }
                 p {
-                    font-size: 10px;
+                    font-size: 14px;
                 }
             }
         }
     }
     .category-product {
+        transform: translateY(0);
+        margin: 40px 0;
         .container {
             width: 100%;
-            .category-content {
-                height: 250px;
-                .flex(space-evenly,center);
-                .section {
+            height: 250px;
+            .flex(space-evenly,center);
+            .section {
+                padding: 0 20px;
                     .represent-img {
                         display: none;
                     }
                     .content {
-                        height: 100%;
-                    
+                        height: 100%;   
                     }
                 }
             }
         }
-    }
 }
 @media screen and (max-width: 1024px){
     .header {
@@ -71,7 +107,7 @@
                     font-size: 20px;
                 }
                 p {
-                    font-size: 10px;
+                    display: none;
                 }
             }
         }
@@ -80,29 +116,28 @@
         .container {
             box-shadow: none;
             border:none;
-            .category-content {
-                height: 250px;
-                .flex(space-evenly,center);
-                .section {
-                    width: 30%;
-                    border: 1px solid #ccc;
-                    .content {
-                        height: 100%;
-                        .dumbbells-icon {
-                            height: 60px;
-                            width: 70px;
-                        }
-                        .strength-icon {
-                            height: 70px;
-                            width: 50px;
-                        }
-                        .power-icon {
-                            height: 70px;
-                            width: 50px;
-                        }
-                        p {
-                            display: none;
-                        }
+            height: 200px;
+            .flex(space-evenly,center);
+            .section {
+                width: 30%;
+                border: 1px solid #ccc;
+                padding: 0;
+                .content {
+                    height: 100%;
+                    .dumbbells-icon {
+                        height: 60px;
+                        width: 70px;
+                    }
+                    .strength-icon {
+                        height: 70px;
+                        width: 50px;
+                    }
+                    .power-icon {
+                        height: 70px;
+                        width: 50px;
+                    }
+                    p {
+                        display: none;
                     }
                 }
             }
@@ -114,6 +149,7 @@
                 .container {
                     .products-list {
                         margin-right: 0;
+                        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
                         .product-item {
                             margin: 0 3px 30px 3px; 
                         }
@@ -122,10 +158,43 @@
             }
             .brands {
                 .container {
-                    flex-wrap: wrap;
-                    img {
-                        padding: 30px;
+                    .brand-capsule {
+                        .flex(center,center);
+                        flex-wrap: wrap;
+                        a {
+                            padding: 30px;
+                        }
                     }
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            .footer-bottom {
+                .flex(space-between,center);
+                flex-wrap: wrap;
+                .contact {
+                    margin-right: 0;
+                    flex: 0 0 50%;
+                    max-width:50%;
+                }
+                .account {
+                    flex: 0 0 50%;
+                    max-width:50%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .information {
+                    flex: 0 0 50%;
+                    max-width:50%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .link {
+                    flex: 0 0 50%;
+                    max-width:50%;
+                    margin-left: 0;
                 }
             }
         }
@@ -133,7 +202,7 @@
 }
 @media screen and (max-width:576px){
     .header {
-        .header-inner {
+        .header-navigation {
             width: 100%;
         }
         .banner {
@@ -160,14 +229,12 @@
                 padding: 0 50px;
                 border: none;
                 width: 100%;
-                .category-content {
-                    height: 500px;
-                    flex-direction: column;
-                    .section {
-                        width: 100%;
-                        border: 1px solid #ccc;
-                        margin-top: 20px;
-                    }
+                height: 500px;
+                flex-direction: column;
+                .section {
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    margin-top: 20px;
                 }
             }
         }
@@ -222,7 +289,7 @@
 }
 @media screen and (max-width:420px){
     .header {
-        .header-inner {
+        .header-navigation {
             height: 35px;
         }
         .banner {

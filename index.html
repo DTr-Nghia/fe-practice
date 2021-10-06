@@ -17,14 +17,15 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="overlay"></div>
         <!-- Header -->
         <div class="header">
-            <div class="header-inner">
+            <div class="header-navigation">
                 <div class="container">
                     <div class="logo">
                         <a href="#"><img src="./image/Logo.png" alt="Ymax"></a>
                     </div>
-                    <ul class="navbar">
+                    <ul class="nav-list">
                         <li class="nav-item"><a href="#" >Home</a></li>
                         <li class="nav-item"><a href="#">Pages</a></li>
                         <li class="nav-item"><a href="#" >Classes</a></li>
@@ -34,13 +35,36 @@
                     </ul>
                     <div class="control-items">
                         <div class="control-item search">
-                            <i class="fas fa-search"></i>
+                            <a href="#"><i class="fas fa-search"></i></a>
                         </div>
                         <div class="control-item cart">
-                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#"><i class="fas fa-shopping-basket"></i></a>
                         </div>
                         <div class="control-item user">
-                            <i class="fas fa-user"></i>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                    </div>
+                    <div class="header-hide_navigation">
+                        <div class="hide-bar">
+                            <ul class="nav-list_hide">
+                                <li class="nav-item_hide"><a href="#" >Home</a></li>
+                                <li class="nav-item_hide"><a href="#">Pages</a></li>
+                                <li class="nav-item_hide"><a href="#" >Classes</a></li>
+                                <li class="nav-item_hide"><a href="#" >Portfolio</a></li>
+                                <li class="nav-item_hide"><a href="#">Blog</a></li>
+                                <li class="nav-item_hide"><a href="#">Contacts</a></li>
+                            </ul>
+                            <div class="control-items_hide">
+                                <div class="control-item_hide search">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="control-item_hide cart">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                                <div class="control-item_hide user">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="nav-icon">
@@ -54,7 +78,7 @@
                 <div class="container">
                     <h1>Dumbbells Shop</h1>
                     <h2>Best body fitness</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> Lorem Ipsum  has been the industry's standard dummy text ever since the <br/> 1500s, when an unknown printer</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> Lorem Ipsum  has been the industry's standard dummy text ever since the <br/> 1500s, when an unknown printer</p>
                     <button class="shop-button">Shop Now</button>
                 </div>
             </div>
@@ -62,9 +86,10 @@
             <!-- Category Product -->
             <div class="category-product">
                 <div class="container">
-                    <div class="category-content">
                         <div class="section">
-                            <img class="represent-img" src="./image/dumbbell-img.png" alt="dumbbells" />
+                            <div class="represent-img">
+                                <img  src="./image/dumbbell-img.png" alt="dumbbells" />
+                            </div>
                             <div class="content">
                                 <img class="dumbbells-icon" src="./image/dumbbell-icon.png" alt="dumbbells" />
                                 <h2>dumbbells</h2>
@@ -77,17 +102,20 @@
                                 <h2>strength</h2>
                                 <p>Lorem Ipsum is simply dummy text of the <br/> printing and typesetting industry.</p>
                             </div>
-                            <img class="represent-img" src="./image/strength-img.png" alt="strength" />
+                            <div class="represent-img">
+                                <img src="./image/strength-img.png" alt="strength" />
+                            </div>
                         </div>
                         <div class="section">
-                            <img class="represent-img" src="./image/power-img.png" alt="power" />
+                            <div class="represent-img">
+                                <img class="represent-img" src="./image/power-img.png" alt="power" />
+                            </div>
                             <div class="content">
                                 <img class="power-icon" src="./image/power-icon.png" alt="power" />
                                 <h2>power rack & cage</h2>
                                 <p>Lorem Ipsum is simply dummy text of the <br/> printing and typesetting industry.</p>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
             <!-- End of Category Product -->
@@ -242,7 +270,7 @@
                                 <div class="product-img">
                                     <img src="./image/product7-img.png" alt="ProForm Hiit Trainer Lite 5.9">
                                 </div>
-                                <p class="product-name">ProForm Hiit Trainer Lite</p>
+                                <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>
                                 <h4 class="product-price">$300.00</h4>
                                 <div class="product-btn_list">
                                     <div class="product-btn">
@@ -294,7 +322,7 @@
                             <div class="client-avatar">
                                 <img src="./image/client-avt.png" alt="avatar">
                             </div>
-                            <p class="client-saying">"Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a </br> new product for me."</p>
+                            <p class="client-saying">"Good services. I bought a bicycle with a wrong but they accepted free return for me  <br/> and exchange a new product for me."</p>
                             <p class="client-name">Lina</p>
                             <p class="client-sign">Happy clients</p>
                         </div>
@@ -305,7 +333,7 @@
                             <div class="client-avatar">
                                 <img src="./image/client-avt.png" alt="avatar">
                             </div>
-                            <p class="client-saying">"Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a </br> new product for me."</p>
+                            <p class="client-saying">"Good services. I bought a bicycle with a wrong but they accepted free return for me <br/> and exchange a new product for me."</p>
                             <p class="client-name">Lina</p>
                             <p class="client-sign">Happy clients</p>
                         </div>
@@ -316,7 +344,7 @@
                             <div class="client-avatar">
                                 <img src="./image/client-avt.png" alt="avatar">
                             </div>
-                            <p class="client-saying">"Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a </br> new product for me."</p>
+                            <p class="client-saying">"Good services. I bought a bicycle with a wrong but they accepted free return for me <br/> and exchange a new product for me."</p>
                             <p class="client-name">Lina</p>
                             <p class="client-sign">Happy clients</p>
                         </div>
@@ -326,12 +354,14 @@
                 <!-- Brand -->
                 <div class="brands">
                     <div class="container">
-                        <img src="./image//Brand-1.png" alt=" Fitness center">
-                        <img src="./image//Brand-2.png" alt="Bodybuilding Sport Gym">
-                        <img src="./image//Brand-3.png" alt="Health and Fitness center">
-                        <img src="./image//Brand-4.png" alt="Best Local Gym and Health center">
-                        <img src="./image//Brand-5.png" alt="Power Lifter Gym Club">
-                        <img src="./image//Brand-6.png" alt=" Fitness Club and Gym">
+                        <div class="brand-capsule">
+                            <a href="#"><img src="./image//Brand-1.png" alt=" Fitness center"></a>
+                            <a href="#"><img src="./image//Brand-2.png" alt="Bodybuilding Sport Gym"></a>
+                            <a href="#"><img src="./image//Brand-3.png" alt="Health and Fitness center"></a>
+                            <a href="#"><img src="./image//Brand-4.png" alt="Best Local Gym and Health center"></a>
+                            <a href="#"><img src="./image//Brand-5.png" alt="Power Lifter Gym Club"></a>
+                            <a href="#"><img src="./image//Brand-6.png" alt=" Fitness Club and Gym"></a>
+                        </div>
                     </div>
                 </div>
                 <!-- End of Brand -->
@@ -358,10 +388,10 @@
                         <div class="contact">
                             <h1>contact us</h1>
                             <ul class="contact-list">
-                                <li><i class="fas fa-map-marker-alt"></i><p>200 Lincoln Ave, Salinas, CA 93901 </p></li>
-                                <li><i class="fas fa-phone"></i><p>023 32423 223</p></li>
-                                <li><i class="fas fa-envelope"></i><p>gymax@example</p></li>
-                                <li><i class="fas fa-clock"></i><p>9:00 - 20:00 All day</p></li>
+                                <li><i class="fas fa-map-marker-alt"></i><a href="#"><span>200 Lincoln Ave, Salinas, CA 93901 </span></a></li>
+                                <li><i class="fas fa-phone"></i><a href="#"><span>023 32423 223</span></a></li>
+                                <li><i class="fas fa-envelope"></i><a href="#"><span >gymax@example.com</span></a></li>
+                                <li><i class="fas fa-clock"></i><a href="#"><span>9:00 - 20:00 All day</span></a></li>
                             </ul>
                         </div>
                         <div class="account">
@@ -375,7 +405,7 @@
                         </div>
                         <div class="information">
                             <h1>information</h1>
-                            <ul class="infomation-list">
+                            <ul class="information-list">
                                 <li><a href="#">about us</a></li>
                                 <li><a href="#">contact us</a></li>
                                 <li><a href="#">term of user</a></li>
@@ -404,7 +434,6 @@
                 $('.client-say_container').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    autoplay: true,
                     autoplaySpeed: 2000,
                     dots: true,
                     arrows: false,
