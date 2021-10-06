@@ -4,18 +4,19 @@
             height: 50px;
             .container {
                 .flex(space-between,center);
+                flex-direction: row-reverse;
                 position: relative;
                 .logo {
                     img {
-                        width: 100px;
-                        height: 30px;
+                        display:none;
                     }
                 }
                 .nav-list {
                     display: none;
                 }
                 .control-items {
-                    display: none;
+                    position: absolute;
+                    right: 70px;
                 }
                 .header-hide_navigation {
                     .hide-bar {
@@ -23,7 +24,7 @@
                         transform: translateX(100%);
                         flex-direction: column;
                         position: absolute;
-                        width: 30vw;
+                        width: 50vw;
                         height: 100vh;
                         top: 0;
                         right: 0;
@@ -31,8 +32,9 @@
                         transition:@transition;
                         z-index: 999;
                         .nav-list_hide {
+                            width: 100%;
                             .nav-item_hide {
-                                width: 26vw;
+                                width: 100%;
                                 padding: 15px 0;
                                 text-align: center;
                                 border-bottom: 1px solid #ccc;
@@ -60,7 +62,6 @@
         }
         .banner {
             .container {
-                padding: 0 60px;
                 h1 {
                     font-size: 40px;
                 }
@@ -148,10 +149,8 @@
             .products {
                 .container {
                     .products-list {
-                        margin-right: 0;
-                        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-                        .product-item {
-                            margin: 0 3px 30px 3px; 
+                        .product-item { 
+                            width: calc((6 / 12) * 100%);
                         }
                     }
                 }
@@ -250,7 +249,7 @@
                     }
                     .products-list {
                         .product-item {
-                            margin-right: 0;
+                            width: calc((12 / 12) * 100%);
                         }
                     }
                 }
@@ -262,13 +261,18 @@
             .footer-bottom {
                 .flex(flex-start,flex-start);
                 flex-direction: column;
-                margin-left: 20px;
                 .contact {
+                    max-width: 100%;
                     .contact-list {
-                        text-align: center;
+                        li {
+                            a {
+                                padding-left: 10px;
+                            }
+                        }
                     }
                 }
                 .account {
+
                     margin-left: 0;
                     margin-right: 0;
                 }
