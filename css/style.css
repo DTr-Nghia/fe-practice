@@ -352,12 +352,12 @@ ul li {
 .main-content .page-main .products .container .product-filter_title {
   text-transform: uppercase;
   font-size: 12px;
-  padding: 0px 17px;
+  padding: 1px 17px;
   cursor: pointer;
 }
 .main-content .page-main .products .container .products-list {
-  margin-top: 36px;
-  row-gap: 47px;
+  margin-top: 37px;
+  row-gap: 45px;
 }
 .main-content .page-main .products .container .products-list .product-item {
   width: calc((3 / 12) * 100%);
@@ -386,8 +386,8 @@ ul li {
 }
 .main-content .page-main .products .container .products-list .product-item .product-item_content .product-btn_list {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 21px;
+  right: 20px;
 }
 .main-content .page-main .products .container .products-list .product-item .product-item_content .product-btn_list .product-btn {
   border: 1px solid #ccc;
@@ -395,7 +395,7 @@ ul li {
   padding: 4px 6px;
   border-radius: 5px 0 5px 0;
   transition: all 0.5s linear;
-  transform: translateX(150%);
+  transform: translateX(300%);
 }
 .main-content .page-main .products .container .products-list .product-item .product-item_content .product-btn_list .product-btn a {
   color: #333;
@@ -467,7 +467,7 @@ ul li {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #ccc;
-  padding: 0 30px;
+  padding: 0 21px;
   margin-top: 47px;
 }
 .main-content .page-main .brands .container .brand-capsule a {
@@ -487,8 +487,8 @@ ul li {
   text-align: center;
 }
 .footer .container .footer-top .logo {
-  margin-top: 100px;
-  margin-bottom: 15px;
+  margin-top: 97px;
+  margin-bottom: 16px;
 }
 .footer .container .footer-top p {
   margin-bottom: 36px;
@@ -500,6 +500,7 @@ ul li {
   align-items: center;
   margin-bottom: 58px;
   padding-left: 10px;
+  font-size: 18px;
 }
 .footer .container .footer-top .social a {
   padding-right: 45px;
@@ -513,7 +514,7 @@ ul li {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 61px;
+  margin-top: 51px;
 }
 .footer .container .footer-bottom h1 {
   color: #fff;
@@ -529,7 +530,7 @@ ul li {
 }
 .footer .container .footer-bottom .contact {
   margin-right: 19px;
-  line-height: 1.667;
+  line-height: 2.5;
 }
 .footer .container .footer-bottom .contact-list li {
   display: flex;
@@ -539,12 +540,12 @@ ul li {
   line-height: 2.5;
 }
 .footer .container .footer-bottom .contact-list li a {
-  padding-left: 10px;
+  padding-left: 14px;
 }
 .footer .container .footer-bottom .account {
   margin-left: 23px;
   margin-right: 89px;
-  line-height: 1.667;
+  line-height: 2.5;
 }
 .footer .container .footer-bottom .account-list li {
   text-transform: capitalize;
@@ -552,8 +553,8 @@ ul li {
   line-height: 2.5;
 }
 .footer .container .footer-bottom .information {
-  line-height: 1.667;
-  margin-left: 89px;
+  line-height: 2.5;
+  margin-left: 84px;
   margin-right: 89px;
 }
 .footer .container .footer-bottom .information-list li {
@@ -562,8 +563,8 @@ ul li {
   text-transform: capitalize;
 }
 .footer .container .footer-bottom .link {
-  line-height: 1.667;
-  margin-left: 89px;
+  line-height: 2.5;
+  margin-left: 85px;
 }
 .footer .container .footer-bottom .link-list li {
   margin: 4px 0;
@@ -579,7 +580,7 @@ ul li {
   align-items: center;
 }
 .footer .copyright p {
-  margin: 0;
+  margin: 0 0 5px 0;
   font-size: 14px;
   color: #717171;
 }
