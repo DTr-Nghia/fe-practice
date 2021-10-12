@@ -21,7 +21,6 @@
                         width: calc((3 / 12) * 100%);
                         .product-item_content {
                             border: 1px solid transparent;
-                            height: 330px;
                             position: relative;
                             overflow: hidden;
                             transition: @secondary-transition;
@@ -40,11 +39,19 @@
                                     }
                                 }
                             }
-                            img {
-                                    width: 100%;
-                                    max-width: 270px;
+                            .product-img {
+                                position: relative;
+                                padding-bottom: 85.1851851852%;
+                                text-align: center;
+                                & img {
                                     object-fit: cover;
-                                    margin-bottom: 20px;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 100%;
+                                }
                             }
                             .product-btn_list {
                                 position: absolute;
@@ -74,6 +81,10 @@
                             }
                             .product-name {
                                 line-height: 2;
+                                margin-top: 25px
+                            }
+                            .product-price {
+                                margin-bottom: 30px;
                             }
                         }
                     }
